@@ -4,6 +4,23 @@ const navToggle = document.getElementById('nav-toggle')
 const navClose = document.getElementById('nav-close')
 
 
+/*change main color
+function GetRandomColor() {
+    var myArray = ["360","142","250"];
+  
+    var color = myArray[Math.floor(Math.random()*set.length)];
+  
+    return color ;
+  }
+
+window.onload = function(){
+    var arr = document.querySelectorAll(".back__color");
+    for(var i=0;i<arr.length;i++){
+         arr[i].style.background = myArray[Math.floor(Math.random()*bgcolorlist.length)]
+    }
+}*/
+
+
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if(navToggle){
@@ -92,6 +109,19 @@ modalCloses.forEach((modalClose)=>{
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 
+let swiper = new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+    
+  });
 
 /*==================== TESTIMONIAL ====================*/
 
