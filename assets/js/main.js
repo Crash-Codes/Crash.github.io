@@ -118,9 +118,10 @@ let swiper = new Swiper(".portfolio__container", {
     },
     pagination: {
       el: ".swiper-pagination",
-      clickable:true,
+      /*clickable:true,*/
     },
-    
+    mousewheel: true,
+    keyboard: true,    
   });
 
 /*==================== TESTIMONIAL ====================*/

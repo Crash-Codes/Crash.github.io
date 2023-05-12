@@ -793,6 +793,12 @@ color: var(--first-color);
 .swiper-pagination-bullets-active{
   background-color: var(--first-color);
 }
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullets{
+  outline: none;
+}
+
 /*==================== PROJECT IN MIND ====================*/
 .project{
   text-align: center;
